@@ -1,0 +1,24 @@
+<! DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+        </head>
+        <body>
+            <h1>Login</h1>
+            <form action="/auth/login" method="POST">
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="password" name="password" placeholder="Passeord" required>
+                <button type="submit">Login</button>
+            </form>
+            <a href="/auth/register">Register</a>
+        </body>
+        </html>
+        <head>
+            <title>Products</title>
+        </head>
+        <body>
+            <h1>products</h1>
+            <p>Welcome, <%= user.email %>! Your role is <%= user.role %>.</p>
+            <a href="/auth/logout">Logout</a>
+        </body>
+        
